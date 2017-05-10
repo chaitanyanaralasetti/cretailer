@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<script type="text/javascript">
+		function fun(){
+			var sel = document.getElementById('menu');
+            var sv = sel.options[sel.selectedIndex].value;
+            if(sv=="a1")
+            	value.text1=450;
+
+
+		}
+	</script>
+</head>
+<body>
+<form >
+<div style=" position:absolute; top:200px; left: 400px ; border:solid; padding: 5px; background-color:black;color:white; ">
+   <u>product name</u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u> Quantity(kg's)</u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>price</u><br><br>
+	<select id="menu" onchange="fun()">
+		<option value="a1">product-1</option>
+		<option value="a2">product-2</option>
+		<option value="a3">product-3</option>
+		<option value="a4">product-4</option>
+		<option value="a5">product-5</option>
+		<option value="a6">product-6</option>
+		<option value="a7">product-7</option>
+		<option value="a8">product-8</option>
+		<option value="a9">product-9</option>
+		<option value="a10">product-10</option>
+		<option value="a11">product-11</option>
+		<option value="a12">product-12</option>
+	</select>&nbsp;&nbsp;&nbsp;
+    <input type="text" id="text1">&nbsp;&nbsp;&nbsp;
+    <input type="text" id="text2">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" name="ADD"><br>
+    </div>
+</form>
+</body>
+</html>
